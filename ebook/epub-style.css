@@ -1,0 +1,237 @@
+/* 그들은 당신이 뭘 볼지 이미 알고 있다 - ePub 스타일시트 */
+
+/* 기본 폰트 설정 */
+body {
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-size: 1em;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+  word-break: keep-all;
+}
+
+/* 제목 스타일 */
+h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  page-break-before: always;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  color: #222;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  color: #444;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* PART 헤더 스타일 */
+h1[id^="part"] {
+  text-align: center;
+  border: none;
+  font-size: 2em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+/* 문단 */
+p {
+  margin: 0.8em 0;
+  text-indent: 0;
+}
+
+/* 리스트 */
+ul, ol {
+  margin: 1em 0;
+  padding-left: 1.5em;
+}
+
+li {
+  margin: 0.4em 0;
+  line-height: 1.6;
+}
+
+/* 코드 블록 */
+pre {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1em;
+  font-family: "D2Coding", "Courier New", monospace;
+  font-size: 0.85em;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+  font-family: "D2Coding", "Courier New", monospace;
+  background-color: #f0f0f0;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* 테이블 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.9em;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.6em 0.8em;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* 인용 */
+blockquote {
+  margin: 1.5em 0;
+  padding: 1em 1.5em;
+  border-left: 4px solid #666;
+  background-color: #f9f9f9;
+  font-style: italic;
+}
+
+/* 구분선 */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2em 0;
+}
+
+/* 강조 */
+strong {
+  font-weight: bold;
+  color: #000;
+}
+
+em {
+  font-style: italic;
+}
+
+/* 링크 */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/* BOX 스타일 (팁, 주의사항 등) */
+.box, [class*="box"] {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1.5em 0;
+  background-color: #fafafa;
+}
+
+/* 핵심 정리 섹션 */
+h2[id*="핵심-정리"], h2[id*="핵심정리"] {
+  background-color: #f0f0f0;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+}
+
+/* 목차 스타일 */
+nav#toc {
+  page-break-after: always;
+}
+
+nav#toc ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav#toc li {
+  margin: 0.5em 0;
+}
+
+nav#toc a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 용어집 스타일 */
+h2[id*="glossary"], h2[id*="용어집"] {
+  border-bottom: 2px solid #666;
+}
+
+/* 페이지 나누기 */
+.page-break {
+  page-break-before: always;
+}
+
+/* 이미지 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
+
+figure {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 0.5em;
+}
+
+/* 각주 */
+.footnote {
+  font-size: 0.85em;
+  color: #666;
+}
+
+/* 프롤로그/에필로그 */
+h1[id*="prologue"], h1[id*="epilogue"],
+h1[id*="프롤로그"], h1[id*="에필로그"] {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Appendix 스타일 */
+h1[id*="appendix"], h1[id*="부록"] {
+  background-color: #f5f5f5;
+  padding: 1em;
+  text-align: center;
+}
