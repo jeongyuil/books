@@ -40,14 +40,16 @@
 ```
 books/
 ├── README.md
-├── 그들은 당신이 뭘 볼지 이미 알고 있다.md (한글 본문, 5,936줄)
-├── They Already Know What You'll Watch Next.md (영문)
-├── 목차_한글.md
-├── 표지_브리프.md
-├── 시각자료목록.md
-├── 리뷰결과.md
-├── 출판리뷰.md
-└── ebook/ (EPUB 빌드 리소스)
+├── 그로스 분석/
+│   ├── 그들은 당신이 뭘 볼지 이미 알고 있다.md (한글 본문, 5,936줄)
+│   ├── They Already Know What You'll Watch Next.md (영문)
+│   ├── 목차_한글.md
+│   ├── 표지_브리프.md
+│   ├── 시각자료목록.md
+│   ├── 리뷰결과.md
+│   ├── 출판리뷰.md
+│   └── ebook/ (EPUB 빌드 리소스)
+└── sql cheat sheet/
 ```
 
 ---
